@@ -12,6 +12,7 @@ class BonusServiceTest {
         boolean passed = expected == actual;
         assertEquals(expected, actual);
     }
+    
     @org.junit.jupiter.api.Test
     void forCalculatingUnregisteredUnderLimit() {
         BonusService service = new BonusService();
@@ -22,6 +23,7 @@ class BonusServiceTest {
         boolean passed = expected == actual;
         assertEquals(expected, actual);
     }
+    
     @org.junit.jupiter.api.Test
     void forCalculatingRegisteredAboveLimit() {
         BonusService service = new BonusService();
@@ -32,6 +34,7 @@ class BonusServiceTest {
         boolean passed = expected == actual;
         assertEquals(expected, actual);
     }
+    
     @org.junit.jupiter.api.Test
     void forCalculatingUnRegisteredAboveLimit() {
         BonusService service = new BonusService();
